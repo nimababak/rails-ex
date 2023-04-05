@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    render 'public/index.html'
+    render '/articles'
   end
 end
