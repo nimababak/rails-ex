@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    render :file => 'public/index.html'
+    render 'public/index.html'
   end
 end
