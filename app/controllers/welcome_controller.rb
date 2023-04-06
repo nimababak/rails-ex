@@ -3,7 +3,7 @@
 #    render :file => 'public/index.html'
 #  end
 #end
-class ArticlesController < ApplicationController
+class WelcomeController < ApplicationController
 
   http_basic_authenticate_with name: (ENV["APPLICATION_USER"].blank? ? 'test' : ENV['APPLICATION_USER']), password: (ENV["APPLICATION_PASSWORD"].blank? ? 'test' : ENV["APPLICATION_PASSWORD"]), except: [:index, :show]
 
