@@ -1,6 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-#    render :file => 'public/index.html'
-    render template: 'public/index.html'
+    render_to_string :file => 'public/index.html'
   end
 end
